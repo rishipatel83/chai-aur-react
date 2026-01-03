@@ -5,15 +5,10 @@ import "./App.css";
 
 function App() {
   let [counter, setCounter] = useState(10);
-//   let counter = 10;
   let addvalue = () => {
-   //  counter++;
     if (counter < 20) setCounter(counter + 1);
-   //  console.log("clicked ", counter);
   };
-//   let [dcounter, setDCounter] = useState(counter);
   let decvalue = () => {
-   //  console.log("dclicked", dcounter);
     if (counter > 0) setCounter(counter - 1);
   };
   return (
