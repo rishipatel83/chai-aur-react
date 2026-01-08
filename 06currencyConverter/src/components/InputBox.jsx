@@ -2,14 +2,15 @@ import React, { useId } from "react";
 
 function InputBox({
   label,
-  ammount,
-  onAmmountChange,
+  amount,
+  onAmountChange,
   onCurrencyChange,
   currencyOptions = [],
   selectCurrency = "usd",
-  ammountDisable = false,
+  amountDisable = false,
   currencyDisable = false,
   className = "",
+  inputClassName = "",
 }) {
   const amountInputid = useId();
   return (
@@ -23,13 +24,13 @@ function InputBox({
         </label>
         <input
           id={amountInputid}
-          className="outline-none w-full bg-transparent py-1.5"
+          className={`outline-none w-full bg-transparent py-1.5 ${inputClassName}`}
           type="number"
           placeholder="Amount"
-          disabled={ammountDisable}
-          value={ammount}
+          disabled={amountDisable}
+          value={amount}
           onChange={(e) =>
-            onAmmountChange && onAmmountChange(Number(e.target.value))
+            onAmountChange && onAmountChange(Number(e.target.value))
           }
         />
       </div>
