@@ -14,7 +14,7 @@ function App() {
     if (numberAllowed) str += "0123456789";
     if (charAllowed) str += "!@#$%^&*-_=+`~[]{}";
     for (let index = 1; index < length; index++) {
-      let char = Math.floor(Math.random() * str.length + 1);
+      let char = Math.floor(Math.random() * str.length);
       pass += str.charAt(char);
     }
     setPassword(pass);
@@ -28,7 +28,7 @@ function App() {
 
   useEffect(() => {
     passwordGenerator();
-  }, [length, numberAllowed, charAllowed, passwordGenerator]);
+  }, [length,numberAllowed,charAllowed,passwordGenerator]);
   return (
     <>
       <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-gray-800 text-orange-500">
