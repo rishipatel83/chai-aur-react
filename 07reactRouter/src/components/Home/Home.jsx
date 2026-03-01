@@ -32,17 +32,17 @@ export default function Home() {
 
         <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
           <img
-            className="w-96"
-            src="https://i.ibb.co/5BCcDYB/Remote2.png"
+            className="w-150"
+            src="https://cdn.prod.website-files.com/5bff8886c3964a992e90d465/5c0061a47aefa4500f0f42d1_rotating-mixing-optimized.gif
+"
             alt="image1"
           />
         </div>
       </aside>
-
       <div className="grid  place-items-center sm:mt-20">
         <img
-          className="sm:w-96 w-48"
-          src="https://i.ibb.co/2M7rtLk/Remote1.png"
+          className="sm:w-140 w-100"
+          src="https://cdn.prod.website-files.com/5bff8886c3964a992e90d465/5bff98f85ea7faf86504605e_scenes.gif"
           alt="image2"
         />
       </div>
