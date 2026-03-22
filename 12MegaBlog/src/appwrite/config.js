@@ -1,10 +1,10 @@
-import conf from '../conf.js';
+import conf from '../conf/conf.js';
 import {Client, ID, Databases, Storage, Query} from "appwrite";
 
 export class Service{
    client = new Client();
    databases;
-   bucket;
+   bucket;   //it is nothing but the name for the storage we can name it whatever we want
    
    constructor(){
       this.client 
@@ -29,7 +29,6 @@ export class Service{
          )
       } catch (error) {
          throw new Error(error);
-         
       }
    }
 
