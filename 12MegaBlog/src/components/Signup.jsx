@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import {Link,useNavigate} from 'react-hook-form'
+import {Link,useNavigate} from 'react-router-dom'
 import authService from '../appwrite/auth'
 import {login as storeLogin} from '../store/authSlice'
 import {useDispatch} from 'react-redux'

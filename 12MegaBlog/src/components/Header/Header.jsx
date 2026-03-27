@@ -40,7 +40,8 @@ function Header() {
         <nav className='flex'>
           <div className='mr-4'>
             <Link>
-              <Logo width='70px'/> //* we gave here width nothing just to overwrite although we are not using it
+              <Logo width='70px'/> 
+              {/*  we gave here width nothing just to overwrite although we are not using it */}
             </Link>
           </div>
           <ul className='flex ml-auto'>

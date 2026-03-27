@@ -46,7 +46,7 @@ function Login() {
                Sign Up
                </Link>
             </p>
-            //* if there is an error so we display it we used this syntax similar to if-else we can either use if else too
+            {/* if there is an error so we display it we used this syntax similar to if-else we can either use if else too */}
             {error && <p className="text-red-600 mt-8 text-center">{error}</p>}
             <form onSubmit={handleSubmit(login)} className='mt-8'>
                <div className='space-y-5'>
